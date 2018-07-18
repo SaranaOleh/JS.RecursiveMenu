@@ -1,0 +1,79 @@
+*, html, body{margin: 0; padding: 0; list-style: none; box-sizing: border-box; text-decoration: none;}
+nav{
+    float: right;
+    font-size: 0px;
+}
+li{
+    display: inline-block;
+    vertical-align: top;
+}
+a{
+    display: block;
+    height: 80px;
+    font-size: 80px; 
+    color:black;
+    border-right: 1px solid black;
+    position: relative;
+    padding: 0 0 0 36px;
+}
+li:last-child a{
+    border: 0;
+}
+a:hover{
+    background: black;
+    color:white;
+}
+a:before{
+    content: '';
+    background: url(../images/Untitled.png) no-repeat;
+    display:block;
+    width: 30px; 
+    height: 30px;
+    position: absolute;
+    left: 5px; 
+    top: 35px;
+    background-size: contain;
+}
+nav ul li ul li a{
+    border: 0;
+}
+nav ul li ul{
+    display: none;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    display: block;
+    position: relative;
+}
+nav ul li:hover ul li ul{
+    position: absolute;
+    left: -325px;
+    top: 0;
+    display: none;
+}
+nav ul li ul li:hover ul{
+    display: block;
+}
+nav ul li ul li:nth-child(2) ul{
+    position: absolute;
+    top: -80px;
+    left: 372px;
+    height: 80px;
+}
+nav ul li ul li:last-child ul li:first-child a{
+    position: absolute; 
+    top: 79px;
+    left: 98px;
+}
+nav ul li ul li:last-child ul li:nth-child(2) a{
+    position: absolute;
+    top: 79px;
+    left: 320px;
+}
+nav ul li ul li:last-child ul li:last-child a{
+    position: absolute; 
+    top: 79px;
+    left: 700px;
+}
